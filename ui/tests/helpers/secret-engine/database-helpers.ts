@@ -342,6 +342,6 @@ export const EXPECTED_FIELDS = {
         type: undefined,
       },
     ],
-    enterpriseOnly: 'self_managed',
+    enterpriseOnly: 'self_managed', //tbd test?
   },
 };

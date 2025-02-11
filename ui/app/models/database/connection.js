@@ -206,6 +206,12 @@ export default Model.extend({
     defaultValue: false,
   }),
 
+  skip_static_role_import_rotation: attr('boolean', {
+    subText:
+      '(Optional) Skips initial password rotation for created static roles. Note: This can be overridden in individual static role configs',
+    defaultValue: false,
+  }),
+
   isAvailablePlugin: computed('plugin_name', function () {
     return !!AVAILABLE_PLUGIN_TYPES.find((a) => a.value === this.plugin_name);
   }),
